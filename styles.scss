@@ -1,0 +1,87 @@
+$color: black;
+$hover-color: grey;
+
+%hover-button {
+  background-color: $hover-color;
+}
+
+%images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  border-radius: 50%;
+}
+
+* {
+  padding: 5px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: $color;
+}
+
+#prof_pic {
+  @extend %images;
+  width: 450px;
+}
+
+.col-lg-6, .col-sm-12 {
+  position: relative;
+  padding: 20px;
+  button + h3 {
+    color: $color;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div > button {
+  padding: 5px;
+  width: 75%;
+  transition-duration: 0.4s;
+}
+
+.nav-item {
+  transition-duration: 0.2s;
+}
+
+button:hover {
+  @extend %hover-button;
+  color: white;
+}
+
+.nav-item:hover {
+  @extend %hover-button;
+}
+
+table {
+  width: 100%;
+  tr {
+    th, td {
+      border: 1px solid black;
+      background-color: lightgrey;
+      padding: 10px;
+    }
+  }
+}
+
+@media all and (min-width: 992px) {
+  h1.top:before {
+    content: "EXTRACURRICULAR ACTIVIES";
+  }
+}
+
+@media all and (max-width: 991px) {
+  h1.top:before {
+    content: "EXTRACURRICULARS";
+  }
+}
+
+.extra {
+  @extend %images;
+  width: 225px;
+}
