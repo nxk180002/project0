@@ -14,14 +14,14 @@
   padding: 5px;
 }
 
-h1 {
+h2 {
   text-align: center;
   font-weight: bold;
   color: black;
 }
 
 #prof_pic {
-  width: 450px;
+  width: 350px;
 }
 
 .col-lg-6, .col-sm-12 {
@@ -59,12 +59,12 @@ table tr th, table tr td {
 }
 
 @media all and (min-width: 992px) {
-  h1.top:before {
+  h2.top:before {
     content: "EXTRACURRICULAR ACTIVIES";
   }
 }
 @media all and (max-width: 991px) {
-  h1.top:before {
+  h2.top:before {
     content: "EXTRACURRICULARS";
   }
 }
