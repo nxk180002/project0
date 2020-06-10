@@ -17,7 +17,7 @@ $hover-color: grey;
   padding: 5px;
 }
 
-h2 {
+h2.start {
   text-align: center;
   font-weight: bold;
   color: $color;
@@ -25,7 +25,7 @@ h2 {
 
 #prof_pic {
   @extend %images;
-  width: 450px;
+  width: 350px;
 }
 
 .col-lg-6, .col-sm-12 {
